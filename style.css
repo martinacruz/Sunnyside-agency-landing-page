@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 .banner {
@@ -79,7 +78,7 @@
 }
 
 .section1 .text-container {
-    width: 70%;
+    width: 60%;
 }
 
 
@@ -88,7 +87,7 @@
     margin-bottom: 15px;
 }
 
-.left p {
+.section1 .left p {
     color: #848391;
     line-height: 1.8;
     font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +131,7 @@
 }
 
 .section2 .text-container {
-    width: 70%;
+    width: 60%;
 }
 
 .right h1 {
@@ -140,7 +139,7 @@
     margin-bottom: 15px;
 }
 
-.right p {
+.section2 .right p {
     color: #848391;
     line-height: 1.8;
     font-family: Arial, Helvetica, sans-serif;
@@ -193,18 +192,78 @@
     margin-bottom: 20px;
 }
 
-.text-container p {
-    /* margin-bottom: 30px; */
-}
-
-.right .text-container p{
-    /* margin-bottom: 30px; */
-}
-
 .section3 .right .text-container{
     color: hsl(198, 62%, 26%);
 }
 
 .section3 .left .text-container{
     color: hsl(167, 40%, 24%);
+}
+
+.section1, .section2, .testimonial-container {
+    background-color: #FEFBF8;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.testimonial-container h3 {
+    letter-spacing: 2px;
+}
+
+.testimonial-container h3, .position {
+    color: #848391;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.card {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.client {
+    border-radius: 50%;
+    height: 25%;
+}
+
+.client, .review {
+    margin-bottom: 40px;
+}
+
+.review {
+    line-height: 1.5;
+}
+
+.name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: flex;
+    height: 60vh;
+}
+
+.photo {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    height: 400px;
+    background-color: #91D3C5;
 }
