@@ -231,6 +231,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items: center;
+    padding: 0 40px;
 }
 
 .client {
@@ -244,6 +245,7 @@
 
 .review {
     line-height: 1.5;
+    text-align: center;
 }
 
 .name {
