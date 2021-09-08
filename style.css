@@ -7,10 +7,6 @@ h1, h2, h3 {
     font-family: 'Fraunces', Arial, sans-serif;
 }
 
-/* p {
-    font-family: 'Barlow', arial, sans-serif;
-} */
-
 .banner {
     background-image: url("/images/desktop/image-header.jpg");
     height: 100vh;
@@ -329,3 +325,63 @@ h1, h2, h3 {
     margin-right: 25px;
 }
 
+
+
+/* Mobile */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+    .menu {
+        display: none;
+    }
+
+    .section1 {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+
+    .section2 {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .section3 {
+        flex-direction: column;
+        height: 160vh;
+    }
+
+
+
+
+
+
+.testimonial-container{
+    height: 180vh;
+}
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+        height: 50vh;
+        display: none;
+    }
+
+    .card {
+    height: 243px;
+    width: 187px;
+    }
+
+    .footer {
+        height:45vh;
+    }
+}
