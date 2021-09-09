@@ -17,3 +17,8 @@ function openMenu() {
 }
 
 hamburgerIcon.addEventListener('click', openMenu)
+
+if (body.style.width > '812') {
+    currentDisplay = false
+    mobileMenu.style.display = 'none'
+}

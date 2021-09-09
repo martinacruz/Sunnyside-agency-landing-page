@@ -8,7 +8,7 @@ h1, h2, h3 {
 }
 
 .banner {
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("images/desktop/image-header.jpg");
     height: 100vh;
     background-position: center bottom;
     background-size: cover;
@@ -25,6 +25,10 @@ h1, h2, h3 {
 }
 
 .mobile-menu{
+    display: none;
+}
+
+.mobile-menu-container {
     display: none;
 }
 
@@ -381,16 +385,11 @@ h1, h2, h3 {
 }
 
 
-.mobile-menu-container .menu-triangle {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
 .menu-triangle {
     z-index: 3;
     position: absolute;
     top: 8%;
-    right: 5.5%;
+    right: 6%;
     width: 0;
     height: 0;
     border-bottom: 20px solid white;
