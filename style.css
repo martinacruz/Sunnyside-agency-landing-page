@@ -24,6 +24,10 @@ h1, h2, h3 {
     padding: 10px 30px;
 }
 
+.mobile-menu{
+    display: none;
+}
+
 .menu {
     display: flex;
     font-size: 20px;
@@ -339,24 +343,28 @@ h1, h2, h3 {
     overflow-x: hidden; 
 }
 
+.mobile-menu{
+    display: contents;
+}
+
     .menu {
         display: none;
-    }
-
-    .banner {
-        height: 90vh;
-        background-position: center top;
-        background-size: 40% contain;
     }
 
 
     .text {
         text-align: center;
-        font-size: 60px;
+        font-size: 50px;
+        letter-spacing: 5px;
     }
 
     .section1 {
         flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .section2 {
+        flex-direction: column;
         height: auto;
     }
 
@@ -385,16 +393,33 @@ h1, h2, h3 {
         font-weight: 600;
     }
 
-    .section2 {
+    .section3 {
         flex-direction: column;
         height: auto;
     }
 
-    .section3 {
-        flex-direction: column;
-        height: 160vh;
+
+    .section3 .left .text-container { 
+        padding: 10px 0;
     }
 
+    .section3 .left .text-container p{
+        margin-bottom: 30px;
+    }
+
+    .section3 .right .text-container { 
+        padding: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 .right .text-container h2{ 
+        padding-top: 250px
+    }
+
+    .section3 .text-container p {
+        width: 100%;
+    }
 
     .testimonial-container{
         height: 1400px;
