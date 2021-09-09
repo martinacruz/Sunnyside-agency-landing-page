@@ -347,12 +347,64 @@ h1, h2, h3 {
     display: contents;
 }
 
+.mobile-menu-container {
+    display: none;
+    justify-content: center;
+    width: 100%;
+}
+
+.mobile-menu-layout {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 85%;
+    height: 60%;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.mobile-menu-layout span:hover {
+    cursor: pointer;
+}
+
+.contact {
+    font-family: 'Fraunces';
+
+    font-weight: 600;
+    padding: 20px 30px;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 50px;
+}
+
+
+.mobile-menu-container .menu-triangle {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.menu-triangle {
+    z-index: 3;
+    position: absolute;
+    top: 8%;
+    right: 5.5%;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+}
+
+
     .menu {
         display: none;
     }
 
 
     .text {
+        z-index: 1;
         text-align: center;
         font-size: 50px;
         letter-spacing: 5px;
