@@ -274,12 +274,13 @@ h1, h2, h3 {
 
 .gallery {
     display: flex;
-    height: 60vh;
 }
 
 .photo {
-    background-position: center;
-    background-size: cover;
+    flex: 0.25;
+}
+
+.photo img {
     height: 100%;
     width: 100%;
 }
@@ -329,7 +330,7 @@ h1, h2, h3 {
 
 /* Mobile */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+@media  (min-width: 375px) and (max-width: 812px) {
     html,body {
     width: 100%;
     height: 100%;
@@ -342,14 +343,51 @@ h1, h2, h3 {
         display: none;
     }
 
+    .banner {
+        height: 90vh;
+        background-position: center top;
+        background-size: 40% contain;
+    }
+
+
+    .text {
+        text-align: center;
+        font-size: 60px;
+    }
+
     .section1 {
         flex-direction: column-reverse;
-        height: 100vh;
+        height: auto;
+    }
+
+    .section1 .left, .section2 .right {
+        padding: 80px 30px;
+        text-align: center;
+    }
+
+    .section1 .text-container, .section2 .text-container, .section3 .text-container {
+        width: 100%;
+    }
+
+    .section1 .left p, .section2 .right p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .section1 .left h1, .section2 .right h1 {
+        font-size: 2.3rem;
+        font-weight: 900;
+        margin-bottom: 30px;
+    }
+
+    .learn-more .button {
+        font-size: 1rem;
+        font-weight: 600;
     }
 
     .section2 {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
     }
 
     .section3 {
@@ -358,30 +396,55 @@ h1, h2, h3 {
     }
 
 
-
-
-
-
-.testimonial-container{
-    height: 180vh;
-}
+    .testimonial-container{
+        height: 1400px;
+    }
 
     .card-container {
         flex-direction: column;
-    }
-
-    .gallery {
-        flex-wrap: wrap;
-        height: 50vh;
-        display: none;
+        width: 100%;
     }
 
     .card {
-    height: 243px;
-    width: 187px;
+        padding: 0;
+        margin: 0;
+        height: 400px;
     }
+
+    .client {
+        height: 90px;
+    } 
+
+    .review {
+        padding:  0 20px;
+        font-weight: bold;
+    }
+
+    .name {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .photo {
+        flex: 0.5;
+        flex-basis: 50%;
+    }
+
 
     .footer {
         height:45vh;
+    }
+
+    .footer-container h1 {
+        font-size: 40px;
+    }
+
+    .social-links {
+        margin-top: 0px;
     }
 }
